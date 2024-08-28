@@ -1,0 +1,29 @@
+.section {
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.collapseButton {
+    background-color: transparent;
+    border: none;
+    color: #32CD32; /* Green color matching your design */
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.collapsed {
+    display: none;
+}

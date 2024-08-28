@@ -1,0 +1,36 @@
+.card {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-black);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .albumImage {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .content {
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+  }
+   
+  .chip {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .albumName {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: start;
+  }
