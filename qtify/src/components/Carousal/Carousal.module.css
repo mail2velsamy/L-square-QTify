@@ -1,0 +1,18 @@
+.swiperbuttonprev, .swiperbuttonnext {
+    display: none;
+}
+
+.custom-prev, .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.customprev {
+    left: 10px;
+}
+
+.customnext {
+    right: 10px;
+}
