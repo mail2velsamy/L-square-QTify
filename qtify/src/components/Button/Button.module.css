@@ -1,0 +1,26 @@
+:root {
+    --button-bg-color: black;
+    --button-text-color: #32CD32; /* Use the green color code from your Figma file */
+  }
+  
+  .button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 8px; /* Adjust as needed */
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust as needed */
+    transition: background-color 0.3s ease;
+    height: 48px; /* Match the height of the search bar */
+   display: flex;
+   align-items: center; /* Ensure vertical alignment */
+   justify-content: left;
+   margin-right: 40px;
+  }
+  
+  .button:hover {
+    background-color: #444; /* Slightly lighter black on hover */
+  }
+  
