@@ -24,15 +24,15 @@ const Section = ({albums,title}) => {
                 </button>
             </div>
             <div>
-            {!collapsed || title ==='Songs' ? (
+            {title ==='Songs' || !collapsed ? (
         <Carousel items={albums.map((album) => <CardComponent key={album.id} album={album} />)} />
-      ) : (
-        <div className={`${styles.grid} ${collapsed ? styles.collapsed : ''}`}>
+      ) :  (
+        <div className={`${styles.grid}`}>
                 {albums.map((album) => (
                     <CardComponent key={album.id} album={album}  title={title}/>
                 ))}
             </div>
-      )}
+      )  }
             </div>
         </div>
     );
