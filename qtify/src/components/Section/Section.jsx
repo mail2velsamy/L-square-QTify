@@ -20,11 +20,11 @@ const Section = ({albums,title}) => {
             { title !== 'Songs' ? ( <h4>{title}</h4>):null}
                 <button onClick={toggleCollapse} className={styles.collapseButton}>
                     
-                 { title !== 'Songs' ? (collapsed ? 'Show all' : 'Collapse'):null }
+                 { title !== 'Songs' ? (collapsed ? 'Collapse' : 'Show All'):null }
                 </button>
             </div>
             <div>
-            {collapsed || title ==='Songs' ? (
+            {!collapsed || title ==='Songs' ? (
         <Carousel items={albums.map((album) => <CardComponent key={album.id} album={album} />)} />
       ) : (
         <div className={`${styles.grid} ${collapsed ? styles.collapsed : ''}`}>
