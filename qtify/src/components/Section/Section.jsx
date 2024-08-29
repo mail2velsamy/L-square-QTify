@@ -17,18 +17,19 @@ const Section = ({albums,title}) => {
     return (
         <div className={styles.section}>
             <div className={styles.header}>
-                <h4>{title}</h4>
+            { title !== 'Songs' ? ( <h4>{title}</h4>):null}
                 <button onClick={toggleCollapse} className={styles.collapseButton}>
-                 {collapsed ? 'Show All' : 'Collapse'}
+                    
+                 { title !== 'Songs' ? (collapsed ? 'Show All' : 'Collapse'):null }
                 </button>
             </div>
             <div>
-            {collapsed ? (
+            {collapsed || title ==='Songs' ? (
         <Carousel items={albums.map((album) => <CardComponent key={album.id} album={album} />)} />
       ) : (
         <div className={`${styles.grid} ${collapsed ? styles.collapsed : ''}`}>
                 {albums.map((album) => (
-                    <CardComponent key={album.id} album={album} />
+                    <CardComponent key={album.id} album={album}  title={title}/>
                 ))}
             </div>
       )}
