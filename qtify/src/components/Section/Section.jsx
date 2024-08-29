@@ -20,7 +20,7 @@ const Section = ({albums,title}) => {
             { title !== 'Songs' ? ( <h4>{title}</h4>):null}
                 <button onClick={toggleCollapse} className={styles.collapseButton}>
                     
-                 { title !== 'Songs' ? (collapsed ? 'Show All' : 'Collapse'):null }
+                 { title !== 'Songs' ? (collapsed ? 'Show all' : 'Collapse'):null }
                 </button>
             </div>
             <div>
