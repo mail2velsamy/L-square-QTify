@@ -19,7 +19,7 @@ const NewAlbum = () => {
     }, []);
 
     return (
-        <Section albums= {newAlbums} title="New Album"/>
+        <Section albums= {newAlbums} title="New Albums"/>
     );
 }
 

@@ -19,7 +19,7 @@ const TopAlbum = () => {
     }, []);
 
     return (
-        <Section albums= {albums} title="Top Album"/>
+        <Section albums= {albums} title="Top Albums"/>
     );
 
 }
